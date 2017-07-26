@@ -1,9 +1,15 @@
 #include<iostream>
+#define N 100
 using namespace std;
 int main()
 {
-	int n;
+	int a[N], n,m,t=0;
 	cin >> n;
-	cout << endl;
-	int a[n];
+	for (int i = 0; i < n; i++)
+		cin >> a[i];
+	cin >> m;
+	for (int i = 0; i < n; i++)
+		if (m == a[i])
+			t++;
+	cout << t;
 }
